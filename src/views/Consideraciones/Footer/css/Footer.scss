@@ -1,0 +1,38 @@
+footer {
+  display: grid;
+  justify-items: center;
+  button {
+    color: #fff;
+    background-color: #3761b0;
+    padding: 15px 25px 15px 25px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font: {
+      size: 16px;
+      weight: 800;
+    }
+    display: block;
+    margin: 40px auto 0;
+  }
+  p {
+    max-width: 70%;
+    font-size: 15px;
+    color: red;
+    text-align: center;
+    padding: 30px 0 60px;
+    line-height: 150%;
+    span {
+      font-size: 15px;
+      font-weight: 700;
+    }
+  }
+}
+
+@media all and (min-width: 825px) {
+  footer {
+    button {
+      padding: 15px 300px 15px 300px;
+    }
+  }
+}
