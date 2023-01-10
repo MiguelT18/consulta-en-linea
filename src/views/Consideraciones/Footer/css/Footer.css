@@ -2,7 +2,8 @@ footer {
   display: grid;
   justify-items: center;
 }
-footer button {
+footer .MainButton {
+  text-decoration: none;
   color: #fff;
   background-color: #3761b0;
   padding: 15px 25px 15px 25px;
@@ -28,7 +29,7 @@ footer p span {
 }
 
 @media all and (min-width: 825px) {
-  footer button {
+  footer .MainButton {
     padding: 15px 300px 15px 300px;
   }
 }/*# sourceMappingURL=Footer.css.map */

@@ -1,11 +1,12 @@
 import "./css/Footer.css";
 import { Link } from "react-router-dom";
-import { Paso1 } from "../../Paso1/Paso1";
 
 export const Footer = () => {
   return (
     <footer>
-      <button>Continuar</button>
+      <Link className="MainButton" to="primer-paso">
+        Continuar
+      </Link>
       <p>
         <span>ADVERTENCIA:</span> Al realizar el proceso de la consulta en
         línea, tendrás un plazo de <span>siete días continuos</span>, para

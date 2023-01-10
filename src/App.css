@@ -10,3 +10,8 @@ html {
 button {
   border: none;
 }
+#root {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}

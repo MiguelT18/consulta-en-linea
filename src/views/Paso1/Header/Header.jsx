@@ -1,19 +1,19 @@
+import "./css/Formulario.css";
+
 export const Header = () => {
   return (
     <div className="HeaderFormulario">
-      <div className="DatosPersonales">
-        <h1>Datos Personales</h1>
-        <p>En este paso deberás proporcionar tus datos personales</p>
-      </div>
-      <div className="PasosGuia">
-        <span className="DividerLine"></span>
-        <p>1</p>
-        <p>2</p>
-        <p>3</p>
-        <p>4</p>
-        <p>5</p>
-        <span className="DividerLine"></span>
-      </div>
+      <h1>Datos Personales</h1>
+      <h3>En este paso deberás proporcionar tus datos personales</h3>
+      <span className="DividerLine"></span>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+      <span className="DividerLine"></span>
     </div>
   );
 };
