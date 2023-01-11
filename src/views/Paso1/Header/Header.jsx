@@ -1,11 +1,10 @@
-import "./css/Formulario.css";
+import "./css/Header.css";
 
 export const Header = () => {
   return (
     <div className="HeaderFormulario">
       <h1>Datos Personales</h1>
       <h3>En este paso deberás proporcionar tus datos personales</h3>
-      <span className="DividerLine"></span>
       <ul>
         <li>1</li>
         <li>2</li>
@@ -13,7 +12,6 @@ export const Header = () => {
         <li>4</li>
         <li>5</li>
       </ul>
-      <span className="DividerLine"></span>
     </div>
   );
 };

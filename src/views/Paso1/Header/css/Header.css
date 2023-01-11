@@ -1,0 +1,45 @@
+.Paso1 {
+  width: 100%;
+}
+.Paso1 .HeaderFormulario {
+  width: 60vw;
+  margin: 0 auto;
+}
+.Paso1 .HeaderFormulario h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #353535;
+  font-size: 25px;
+}
+.Paso1 .HeaderFormulario h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #474747;
+}
+.Paso1 .HeaderFormulario ul {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  padding: 14px 0;
+}
+.Paso1 .HeaderFormulario ul li {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  list-style: none;
+  line-height: 40px;
+  background-color: #ddd;
+  color: #666;
+  border-radius: 50%;
+}
+.Paso1 .HeaderFormulario ul li:first-child {
+  background-color: #72b239;
+  color: #fff;
+}/*# sourceMappingURL=Formulario.css.map */
