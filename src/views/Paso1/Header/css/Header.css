@@ -8,7 +8,7 @@
 .Paso1 .HeaderFormulario h1 {
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 10px;
+  margin: 30px 0 10px;
   color: #353535;
   font-size: 25px;
 }
@@ -42,4 +42,4 @@
 .Paso1 .HeaderFormulario ul li:first-child {
   background-color: #72b239;
   color: #fff;
-}/*# sourceMappingURL=Formulario.css.map */
+}/*# sourceMappingURL=Header.css.map */

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <footer>
-      <Link className="MainButton" to="primer-paso">
+      <Link className="MainButton" to="/primer-paso">
         Continuar
       </Link>
       <p>
