@@ -1,0 +1,68 @@
+.FormuCheck {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.FormuCheck label {
+  margin: 15px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+.FormuCheck label input {
+  margin-right: 15px;
+  margin-left: 20px;
+}
+.FormuCheck label input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+}
+.FormuCheck .TextCheck1 {
+  padding: 3px;
+  resize: none;
+}
+.FormuCheck p {
+  margin: 15px 0 20px;
+  color: #939393;
+  font-size: 16px;
+}
+.FormuCheck .TextArea {
+  resize: none;
+  outline: none;
+  padding: 6px;
+}
+.FormuCheck .MainButtons {
+  display: flex;
+  gap: 50px;
+  justify-content: end;
+}
+.FormuCheck .MainButtons .NextPage {
+  color: #fff;
+  width: 140px;
+  height: 40px;
+  background-color: #3761b0;
+  border-radius: 4px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FormuCheck .MainButtons .BackPage {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #333;
+  font-size: 16px;
+}
+.FormuCheck .MainButtons .BackPage span {
+  width: 20px;
+  height: 20px;
+  display: block;
+  content: " ";
+  background-image: url("../../../../assets/icons/arrow-back.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=Formulario2.css.map */

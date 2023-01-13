@@ -1,0 +1,72 @@
+.FormuCheck {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  label {
+    margin: 15px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    input {
+      margin: {
+        right: 15px;
+        left: 20px;
+      }
+    }
+    input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .TextCheck1 {
+    padding: 3px;
+    resize: none;
+  }
+  p {
+    margin: 15px 0 20px;
+    color: #939393;
+    font-size: 16px;
+  }
+  .TextArea {
+    resize: none;
+    outline: none;
+    padding: 6px;
+  }
+  .MainButtons {
+    display: flex;
+    gap: 50px;
+    justify-content: end;
+    .NextPage {
+      color: #fff;
+      width: 140px;
+      height: 40px;
+      background-color: #3761b0;
+      border-radius: 4px;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .BackPage {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: #333;
+      font-size: 16px;
+      span {
+        width: 20px;
+        height: 20px;
+        display: block;
+        content: " ";
+        background: {
+          image: url("../../../../assets/icons/arrow-back.svg");
+          position: center;
+          repeat: no-repeat;
+          size: cover;
+        }
+      }
+    }
+  }
+}
