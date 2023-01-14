@@ -4,11 +4,20 @@
   margin-top: 30px;
   margin-bottom: 50px;
   label {
-    margin: 15px 0;
     font-size: 16px;
-    display: flex;
-    align-items: center;
     color: #333;
+    div {
+      width: 100%;
+      margin: {
+        left: 20px;
+        top: 20px;
+        bottom: 20px;
+      }
+      textarea {
+        width: 100%;
+        outline: none;
+      }
+    }
     input {
       margin: {
         right: 15px;
@@ -20,11 +29,16 @@
       height: 18px;
     }
   }
-  .TextCheck1 {
-    padding: 3px;
+  .TextCheck {
+    padding: 5px;
     resize: none;
   }
-  p {
+  p:nth-child(6) {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0 15px;
+  }
+  p:nth-child(8) {
     margin: 15px 0 20px;
     color: #939393;
     font-size: 16px;

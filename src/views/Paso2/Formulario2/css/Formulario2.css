@@ -5,11 +5,18 @@
   margin-bottom: 50px;
 }
 .FormuCheck label {
-  margin: 15px 0;
   font-size: 16px;
-  display: flex;
-  align-items: center;
   color: #333;
+}
+.FormuCheck label div {
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.FormuCheck label div textarea {
+  width: 100%;
+  outline: none;
 }
 .FormuCheck label input {
   margin-right: 15px;
@@ -19,11 +26,16 @@
   width: 18px;
   height: 18px;
 }
-.FormuCheck .TextCheck1 {
-  padding: 3px;
+.FormuCheck .TextCheck {
+  padding: 5px;
   resize: none;
 }
-.FormuCheck p {
+.FormuCheck p:nth-child(6) {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0 15px;
+}
+.FormuCheck p:nth-child(8) {
   margin: 15px 0 20px;
   color: #939393;
   font-size: 16px;
