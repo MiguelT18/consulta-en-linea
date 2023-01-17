@@ -3,9 +3,11 @@
   flex-direction: column;
   margin-top: 30px;
   margin-bottom: 50px;
+
   label {
     font-size: 16px;
     color: #333;
+    margin-top: 20px;
     div {
       width: 100%;
       margin: {
@@ -16,6 +18,7 @@
       textarea {
         width: 100%;
         outline: none;
+        font-size: 16px;
       }
     }
     input {
@@ -29,8 +32,9 @@
       height: 18px;
     }
   }
+
   .TextCheck {
-    padding: 5px;
+    padding: 8px;
     resize: none;
   }
   p:nth-child(6) {
@@ -46,7 +50,8 @@
   .TextArea {
     resize: none;
     outline: none;
-    padding: 6px;
+    padding: 8px;
+    font-size: 16px;
   }
   .MainButtons {
     display: flex;

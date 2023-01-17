@@ -1,0 +1,83 @@
+.Formulario3 {
+  width: 60%;
+  display: grid;
+  gap: 40px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.Formulario3 .Frontal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Formulario3 .Frontal img {
+  width: 320px;
+}
+.Formulario3 .Frontal p {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+.Formulario3 .Perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Formulario3 .Perfil img {
+  width: 320px;
+}
+.Formulario3 .Perfil p {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+.Formulario3 .Base {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Formulario3 .Base img {
+  width: 320px;
+}
+.Formulario3 .Base p {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+.Formulario3 .Botones {
+  display: flex;
+  gap: 50px;
+  justify-content: end;
+}
+.Formulario3 .Botones .EnviarDatos {
+  color: #fff;
+  width: 140px;
+  height: 40px;
+  background-color: #3761b0;
+  border-radius: 4px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Formulario3 .Botones .AtrasBoton {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #333;
+  font-size: 16px;
+}
+.Formulario3 .Botones .AtrasBoton span {
+  width: 20px;
+  height: 20px;
+  display: block;
+  content: " ";
+  background-image: url("../../../../assets/icons/arrow-back.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=Formulario3.css.map */

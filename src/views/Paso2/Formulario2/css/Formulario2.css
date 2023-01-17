@@ -7,6 +7,7 @@
 .FormuCheck label {
   font-size: 16px;
   color: #333;
+  margin-top: 20px;
 }
 .FormuCheck label div {
   width: 100%;
@@ -17,6 +18,7 @@
 .FormuCheck label div textarea {
   width: 100%;
   outline: none;
+  font-size: 16px;
 }
 .FormuCheck label input {
   margin-right: 15px;
@@ -27,7 +29,7 @@
   height: 18px;
 }
 .FormuCheck .TextCheck {
-  padding: 5px;
+  padding: 8px;
   resize: none;
 }
 .FormuCheck p:nth-child(6) {
@@ -43,7 +45,8 @@
 .FormuCheck .TextArea {
   resize: none;
   outline: none;
-  padding: 6px;
+  padding: 8px;
+  font-size: 16px;
 }
 .FormuCheck .MainButtons {
   display: flex;

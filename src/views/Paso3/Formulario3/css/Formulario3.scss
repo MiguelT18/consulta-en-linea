@@ -1,0 +1,86 @@
+.Formulario3 {
+  width: 60%;
+  display: grid;
+  gap: 40px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  .Frontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 320px;
+    }
+    p {
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+      margin-top: 10px;
+    }
+  }
+  .Perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 320px;
+    }
+    p {
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+      margin-top: 10px;
+    }
+  }
+  .Base {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 320px;
+    }
+    p {
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+      margin-top: 10px;
+    }
+  }
+
+  .Botones {
+    display: flex;
+    gap: 50px;
+    justify-content: end;
+    .EnviarDatos {
+      color: #fff;
+      width: 140px;
+      height: 40px;
+      background-color: #3761b0;
+      border-radius: 4px;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .AtrasBoton {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: #333;
+      font-size: 16px;
+      span {
+        width: 20px;
+        height: 20px;
+        display: block;
+        content: " ";
+        background: {
+          image: url("../../../../assets/icons/arrow-back.svg");
+          position: center;
+          repeat: no-repeat;
+          size: cover;
+        }
+      }
+    }
+  }
+}

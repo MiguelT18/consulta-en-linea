@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Consideraciones } from "./views/Consideraciones/Consideraciones";
 import { Paso1 } from "./views/Paso1/Paso1";
 import { Paso2 } from "./views/Paso2/Paso2";
+import { Paso3 } from "./views/Paso3/Paso3";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "segundo-paso",
     element: <Paso2 />,
+  },
+  {
+    path: "tercer-paso",
+    element: <Paso3 />,
   },
 ]);
 

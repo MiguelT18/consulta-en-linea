@@ -23,9 +23,9 @@ export const Formulario2 = () => {
             <textarea
               id="TextCheck1"
               className="TextCheck"
-              placeholder="Indícanos qué enfermedad padeces..."
+              placeholder="Indícanos qué enfermedad padeces."
               cols="40"
-              rows="1"
+              rows="2"
             ></textarea>
           )}
         </div>
@@ -43,9 +43,9 @@ export const Formulario2 = () => {
             <textarea
               id="TextCheck2"
               className="TextCheck"
-              placeholder="Indícanos qué medicamentos estás tomando..."
+              placeholder="Indícanos qué medicamentos estás tomando."
               cols="40"
-              rows="1"
+              rows="2"
             ></textarea>
           )}
         </div>
@@ -63,9 +63,9 @@ export const Formulario2 = () => {
             <textarea
               id="TextCheck3"
               className="TextCheck"
-              placeholder="Indícanos qué enfermedad padeces..."
+              placeholder="Indícanos hace cuánto tiempo se realizó la cirugía."
               cols="40"
-              rows="1"
+              rows="2"
             ></textarea>
           )}
         </div>
@@ -83,9 +83,9 @@ export const Formulario2 = () => {
             <textarea
               id="TextCheck4"
               className="TextCheck"
-              placeholder="Indícanos qué enfermedad padeces..."
+              placeholder="Indícanos hace cuánto tiempo."
               cols="40"
-              rows="1"
+              rows="2"
             ></textarea>
           )}
         </div>
@@ -103,9 +103,9 @@ export const Formulario2 = () => {
             <textarea
               id="TextCheck5"
               className="TextCheck"
-              placeholder="Indícanos qué enfermedad padeces..."
+              placeholder="Indícanos de cuál de las 2 fosas nasales."
               cols="40"
-              rows="1"
+              rows="2"
             ></textarea>
           )}
         </div>
@@ -125,7 +125,9 @@ export const Formulario2 = () => {
           <span></span>
           Atrás
         </Link>
-        <Link className="NextPage">Siguiente</Link>
+        <Link to="/tercer-paso" className="NextPage">
+          Siguiente
+        </Link>
       </div>
     </form>
   );
