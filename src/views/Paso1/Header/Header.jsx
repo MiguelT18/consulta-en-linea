@@ -16,7 +16,7 @@ export const Header = () => {
         <Link to="/tercer-paso">
           <li>3</li>
         </Link>
-        <Link to="/cuarto-paso">
+        <Link to="/pago-qr">
           <li>4</li>
         </Link>
       </ul>
