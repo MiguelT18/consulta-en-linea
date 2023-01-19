@@ -1,3 +1,26 @@
+@mixin buttonStyle() {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #333;
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  span {
+    display: block;
+    content: " ";
+    width: 25px;
+    height: 25px;
+    background: {
+      image: url("../../../../assets/icons/upload-icon.svg");
+      repeat: no-repeat;
+      size: cover;
+      position: center;
+    }
+  }
+}
+
 .Formulario3 {
   width: 60%;
   display: grid;
@@ -5,46 +28,61 @@
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 40px;
-  .Frontal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    img {
-      width: 320px;
+  .Fotos-Paciente {
+    display: grid;
+    gap: 60px;
+    .Frontal {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 320px;
+        border: solid 1px #ddd;
+      }
+      p {
+        text-align: center;
+        font-size: 16px;
+        color: #333;
+        margin: 16px 0;
+      }
+      button {
+        @include buttonStyle();
+      }
     }
-    p {
-      text-align: center;
-      font-size: 16px;
-      color: #333;
-      margin-top: 10px;
+    .Perfil {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 320px;
+      }
+      p {
+        text-align: center;
+        font-size: 16px;
+        color: #333;
+        margin: 16px 0;
+      }
+      button {
+        @include buttonStyle();
+      }
     }
-  }
-  .Perfil {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    img {
-      width: 320px;
-    }
-    p {
-      text-align: center;
-      font-size: 16px;
-      color: #333;
-      margin-top: 10px;
-    }
-  }
-  .Base {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    img {
-      width: 320px;
-    }
-    p {
-      text-align: center;
-      font-size: 16px;
-      color: #333;
-      margin-top: 10px;
+    .Base {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 320px;
+        border: solid 1px #ddd;
+      }
+      p {
+        text-align: center;
+        font-size: 16px;
+        color: #333;
+        margin: 16px 0;
+      }
+      button {
+        @include buttonStyle();
+      }
     }
   }
 
