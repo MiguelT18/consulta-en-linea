@@ -3,7 +3,7 @@ import imgQR from "../../../assets/images/PAGOBCP-QR.png";
 
 export const Main = () => {
   return (
-    <main>
+    <main className="Main-PagoQR">
       <h2>Pago de Consulta</h2>
       <p className="Texto-Pago">
         Con el pago de tu consulta en línea tienes incluido la evaluación

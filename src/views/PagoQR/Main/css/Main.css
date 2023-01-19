@@ -1,35 +1,35 @@
-main {
+.Main-PagoQR {
   display: flex;
   flex-direction: column;
 }
-main h2 {
+.Main-PagoQR h2 {
   color: #353535;
   font-size: 31px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
 }
-main .Texto-Pago {
+.Main-PagoQR .Texto-Pago {
   text-align: center;
   color: #474747;
   margin-top: 10px;
   font-size: 18px;
   font-weight: 500;
 }
-main .Transferencia-Bancaria h3 {
+.Main-PagoQR .Transferencia-Bancaria h3 {
   color: #353535;
   text-transform: uppercase;
   margin-top: 30px;
   font-weight: 600;
   font-size: 18px;
 }
-main .Transferencia-Bancaria p:nth-child(2) {
+.Main-PagoQR .Transferencia-Bancaria p:nth-child(2) {
   text-align: left;
   color: #474747;
   font-size: 16px;
   margin-top: 10px;
 }
-main .Transferencia-Bancaria ul {
+.Main-PagoQR .Transferencia-Bancaria ul {
   display: grid;
   gap: 7px;
   padding: 15px 20px;
@@ -37,20 +37,20 @@ main .Transferencia-Bancaria ul {
   background-color: #e9e9e9;
   border-radius: 8px;
 }
-main .Transferencia-Bancaria ul li {
+.Main-PagoQR .Transferencia-Bancaria ul li {
   list-style: none;
   font-weight: 700;
   font-size: 16px;
   color: #333;
 }
-main .TextoFinal {
+.Main-PagoQR .TextoFinal {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   color: #474747;
   margin: 40px 0 0;
 }
-main img {
+.Main-PagoQR img {
   width: 320px;
   margin: 0 auto;
 }/*# sourceMappingURL=Main.css.map */
