@@ -36,25 +36,6 @@
   position: absolute;
   opacity: 0;
 }
-.Formulario3 .Fotos-Paciente .UploadButton:active span {
-  transform: translateY(5px);
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
-.Formulario3 .Fotos-Paciente .UploadButton span {
-  -webkit-animation: hu__hu__ infinite 2s ease-in-out;
-          animation: hu__hu__ infinite 2s ease-in-out;
-}
-@-webkit-keyframes hu__hu__ {
-  50% {
-    transform: translateY(3px);
-  }
-}
-@keyframes hu__hu__ {
-  50% {
-    transform: translateY(3px);
-  }
-}
 .Formulario3 .Fotos-Paciente .SpanLine {
   display: block;
   width: 100%;
@@ -166,7 +147,7 @@
 .Formulario3 .Botones {
   display: flex;
   gap: 50px;
-  justify-content: end;
+  justify-content: right;
 }
 .Formulario3 .Botones .EnviarDatos {
   color: #fff;

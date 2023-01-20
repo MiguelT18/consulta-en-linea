@@ -36,7 +36,7 @@
   color: #666;
   border-radius: 50%;
 }
-.HeaderFormulario ul li:first-child {
-  background-color: #ddd;
-  color: #474747;
+.HeaderFormulario ul li.active {
+  background-color: #72b239;
+  color: #fff;
 }/*# sourceMappingURL=Header.css.map */

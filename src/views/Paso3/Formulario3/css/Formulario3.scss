@@ -44,18 +44,18 @@
         opacity: 0;
       }
     }
-    .UploadButton:active span {
-      transform: translateY(5px);
-      animation-play-state: paused;
-    }
-    .UploadButton span {
-      animation: hu__hu__ infinite 2s ease-in-out;
-    }
-    @keyframes hu__hu__ {
-      50% {
-        transform: translateY(3px);
-      }
-    }
+    // .UploadButton:active span {
+    //   transform: translateY(5px);
+    //   animation-play-state: paused;
+    // }
+    // .UploadButton span {
+    //   animation: hu__hu__ infinite 2s ease-in-out;
+    // }
+    // @keyframes hu__hu__ {
+    //   50% {
+    //     transform: translateY(3px);
+    //   }
+    // }
     .SpanLine {
       display: block;
       width: 100%;
@@ -130,7 +130,7 @@
   .Botones {
     display: flex;
     gap: 50px;
-    justify-content: end;
+    justify-content: right;
     .EnviarDatos {
       color: #fff;
       width: 140px;

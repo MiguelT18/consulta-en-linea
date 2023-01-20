@@ -40,9 +40,9 @@
       color: #666;
       border-radius: 50%;
     }
-    li:first-child {
-      background-color: #ddd;
-      color: #474747;
+    li.active {
+      background-color: #72b239;
+      color: #fff;
     }
   }
 }
