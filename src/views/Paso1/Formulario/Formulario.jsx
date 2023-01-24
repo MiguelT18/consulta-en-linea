@@ -1,6 +1,7 @@
 import "./css/Formulario.css";
 import { Link } from "react-router-dom";
 import countryList from "country-list-js";
+import React, { useState } from "react";
 
 export const Formulario = () => {
   const countries = Object.values(countryList.all);
@@ -56,6 +57,7 @@ export const Formulario = () => {
       </select>
 
       <div className="Botones">
+        <Link to="/form-test">Enviar</Link>
         <Link to="/" className="Atras">
           <span></span>
           Atrás
