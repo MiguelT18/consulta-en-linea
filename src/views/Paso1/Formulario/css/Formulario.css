@@ -191,4 +191,10 @@
 }
 .FormularioContainer input[type=date]:focus {
   outline: none;
+}
+
+@media all and (max-width: 630px) {
+  .Nombres-Apellidos {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=Formulario.css.map */

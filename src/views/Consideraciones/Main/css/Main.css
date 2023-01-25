@@ -2,6 +2,7 @@ main {
   padding: 40px 0;
 }
 main .CardsContainer {
+  margin: 0 18px;
   display: grid;
   justify-items: center;
   gap: 50px;

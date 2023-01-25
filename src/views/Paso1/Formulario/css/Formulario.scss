@@ -168,3 +168,9 @@
     outline: none;
   }
 }
+
+@media all and (max-width: 630px) {
+  .Nombres-Apellidos {
+    flex-direction: column;
+  }
+}
