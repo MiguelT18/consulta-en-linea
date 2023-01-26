@@ -1,10 +1,12 @@
 .FormularioContainer {
-  width: 60vw;
+  width: 90%;
   margin: 0 auto;
 }
 .FormularioContainer .Nombres-Apellidos {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+  margin-top: 30px;
 }
 .FormularioContainer .Nombres-Apellidos .Nombres {
   padding-left: 13px;
@@ -21,7 +23,6 @@
   border-color: #e0e0e0;
   border-radius: 4px 4px 4px 4px;
   width: 45%;
-  margin-top: 40px;
   height: 50px;
 }
 .FormularioContainer .Nombres-Apellidos .Nombres:focus {
@@ -194,7 +195,13 @@
 }
 
 @media all and (max-width: 630px) {
-  .Nombres-Apellidos {
+  .FormularioContainer .Nombres-Apellidos {
     flex-direction: column;
+  }
+  .FormularioContainer .Nombres-Apellidos .Nombres {
+    width: 100% !important;
+  }
+  .FormularioContainer .Botones {
+    gap: 28px;
   }
 }/*# sourceMappingURL=Formulario.css.map */
