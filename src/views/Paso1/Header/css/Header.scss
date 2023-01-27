@@ -1,7 +1,6 @@
 .HeaderFormulario {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
-  // border: 2px solid red;
   h1 {
     margin: 30px 0 10px;
     color: #353535;
@@ -50,9 +49,6 @@
 
 @media all and (max-width: 630px) {
   .HeaderFormulario {
-    // h1 {
-    //   font-size: clamp(22px, 6vw, 25px);
-    // }
     ul {
       justify-content: center;
     }

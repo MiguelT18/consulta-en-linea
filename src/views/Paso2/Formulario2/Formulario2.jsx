@@ -18,7 +18,7 @@ export const Formulario2 = () => {
           onChange={() => setIsChecked1(!isChecked1)}
         />
         ¿Padece alguna enfermedad?
-        <div>
+        <div className="Check-User-Description">
           {isChecked1 && (
             <textarea
               id="TextCheck1"
@@ -38,7 +38,7 @@ export const Formulario2 = () => {
           onChange={() => setIsChecked2(!isChecked2)}
         />
         ¿Estás tomando algún medicamento?
-        <div>
+        <div className="Check-User-Description">
           {isChecked2 && (
             <textarea
               id="TextCheck2"
@@ -58,7 +58,7 @@ export const Formulario2 = () => {
           onChange={() => setIsChecked3(!isChecked3)}
         />
         ¿Tienes alguna cirugía previa de nariz, ya sea funcional o estética?
-        <div>
+        <div className="Check-User-Description">
           {isChecked3 && (
             <textarea
               id="TextCheck3"
@@ -78,7 +78,7 @@ export const Formulario2 = () => {
           onChange={() => setIsChecked4(!isChecked4)}
         />
         ¿Te hiciste colocar biopolímeros (ácido Hialurónico) o hilos tensores?
-        <div>
+        <div className="Check-User-Description">
           {isChecked4 && (
             <textarea
               id="TextCheck4"
@@ -98,7 +98,7 @@ export const Formulario2 = () => {
           onChange={() => setIsChecked5(!isChecked5)}
         />
         ¿Tienes dificultad para respirar por la nariz?
-        <div>
+        <div className="Check-User-Description">
           {isChecked5 && (
             <textarea
               id="TextCheck5"

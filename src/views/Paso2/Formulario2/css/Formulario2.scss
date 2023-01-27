@@ -1,14 +1,16 @@
 .FormuCheck {
+  width: 70%;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  margin-bottom: 50px;
 
   label {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 170%;
     font-size: 16px;
     color: #333;
-    margin-top: 20px;
-    div {
+    .Check-User-Description {
       width: 100%;
       margin: {
         left: 20px;
@@ -24,7 +26,6 @@
     input {
       margin: {
         right: 15px;
-        left: 20px;
       }
     }
     input[type="checkbox"] {

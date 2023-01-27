@@ -4,9 +4,9 @@ import { Formulario2 } from "./Formulario2/Formulario2";
 
 export const Paso2 = () => {
   return (
-    <div>
+    <>
       <Header />
       <Formulario2 />
-    </div>
+    </>
   );
 };

@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&display=swap");
-header {
+.Header-PagoQR {
   margin-top: 30px;
 }
-header h1 {
+.Header-PagoQR h1 {
   text-align: center;
   text-transform: uppercase;
   color: red;
@@ -10,7 +10,7 @@ header h1 {
   font-weight: 700;
   font-family: "Bebas Neue", Sans-serif;
 }
-header p {
+.Header-PagoQR p {
   text-align: center;
   color: #d2d2d2;
   font-size: 16px;
