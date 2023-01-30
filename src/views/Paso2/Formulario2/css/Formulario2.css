@@ -1,12 +1,10 @@
 .FormuCheck {
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
 }
 .FormuCheck label {
-  width: 90%;
-  margin: 0 auto;
   line-height: 170%;
   font-size: 16px;
   color: #333;
@@ -28,10 +26,13 @@
 .FormuCheck label input[type=checkbox] {
   width: 18px;
   height: 18px;
+  background-color: #72b239;
 }
 .FormuCheck .TextCheck {
   padding: 8px;
   resize: none;
+  border-radius: 8px;
+  border: solid 2px rgb(144, 144, 144);
 }
 .FormuCheck p:nth-child(6) {
   font-size: 16px;
@@ -48,11 +49,14 @@
   outline: none;
   padding: 8px;
   font-size: 16px;
+  border: solid 2px #3761b0;
+  border-radius: 8px;
 }
 .FormuCheck .MainButtons {
   display: flex;
   gap: 50px;
   justify-content: right;
+  margin-bottom: 40px;
 }
 .FormuCheck .MainButtons .NextPage {
   color: #fff;
@@ -81,4 +85,13 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media all and (max-width: 630px) {
+  .Check-User-Description {
+    margin-top: 10px !important;
+    margin-right: 0 !important;
+    margin-bottom: 10px !important;
+    margin-left: 10px !important;
+  }
 }/*# sourceMappingURL=Formulario2.css.map */

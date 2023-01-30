@@ -25,7 +25,7 @@ export const Formulario2 = () => {
               className="TextCheck"
               placeholder="Indícanos qué enfermedad padeces."
               cols="40"
-              rows="2"
+              rows="3"
             ></textarea>
           )}
         </div>
@@ -45,7 +45,7 @@ export const Formulario2 = () => {
               className="TextCheck"
               placeholder="Indícanos qué medicamentos estás tomando."
               cols="40"
-              rows="2"
+              rows="3"
             ></textarea>
           )}
         </div>
@@ -65,7 +65,7 @@ export const Formulario2 = () => {
               className="TextCheck"
               placeholder="Indícanos hace cuánto tiempo se realizó la cirugía."
               cols="40"
-              rows="2"
+              rows="3"
             ></textarea>
           )}
         </div>
@@ -85,7 +85,7 @@ export const Formulario2 = () => {
               className="TextCheck"
               placeholder="Indícanos hace cuánto tiempo."
               cols="40"
-              rows="2"
+              rows="3"
             ></textarea>
           )}
         </div>
@@ -105,7 +105,7 @@ export const Formulario2 = () => {
               className="TextCheck"
               placeholder="Indícanos de cuál de las 2 fosas nasales."
               cols="40"
-              rows="2"
+              rows="3"
             ></textarea>
           )}
         </div>
@@ -116,7 +116,7 @@ export const Formulario2 = () => {
         className="TextArea"
         placeholder="Escribe aquí lo que más te molesta de tu nariz"
         cols="30"
-        rows="2"
+        rows="3"
       ></textarea>
       <p>0 of 90 max characters.</p>
 
