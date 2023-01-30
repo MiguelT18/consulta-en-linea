@@ -9,6 +9,7 @@ header {
     margin: 0 16px;
   }
   .Consideraciones {
+    width: 100vw;
     display: grid;
     justify-items: center;
     @mixin spanH3() {
@@ -18,8 +19,9 @@ header {
     }
 
     h1 {
+      width: 100vw;
       color: #2c609f;
-      font-size: clamp(30px, 10vw, 36px);
+      font-size: clamp(28px, 9vw, 36px);
       font-weight: 800;
       text-transform: uppercase;
     }
