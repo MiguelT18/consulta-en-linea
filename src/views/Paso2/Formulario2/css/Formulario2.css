@@ -4,42 +4,47 @@
   flex-direction: column;
   margin-top: 30px;
 }
-.FormuCheck label {
+.FormuCheck .Checkboxes-Container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.FormuCheck .Checkboxes-Container label {
   line-height: 170%;
   font-size: 16px;
   color: #333;
 }
-.FormuCheck label .Check-User-Description {
+.FormuCheck .Checkboxes-Container label .Check-User-Description {
   width: 100%;
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.FormuCheck label .Check-User-Description textarea {
+.FormuCheck .Checkboxes-Container label .Check-User-Description textarea {
   width: 100%;
   outline: none;
   font-size: 16px;
 }
-.FormuCheck label input {
+.FormuCheck .Checkboxes-Container label input {
   margin-right: 15px;
 }
-.FormuCheck label input[type=checkbox] {
+.FormuCheck .Checkboxes-Container label input[type=checkbox] {
   width: 18px;
   height: 18px;
   background-color: #72b239;
 }
-.FormuCheck .TextCheck {
+.FormuCheck .Checkboxes-Container label .TextCheck {
   padding: 8px;
   resize: none;
   border-radius: 8px;
   border: solid 2px rgb(144, 144, 144);
 }
-.FormuCheck p:nth-child(6) {
+.FormuCheck p:nth-child(2) {
   font-size: 16px;
   color: #333;
   margin: 10px 0 15px;
 }
-.FormuCheck p:nth-child(8) {
+.FormuCheck p:nth-child(4) {
   margin: 15px 0 20px;
   color: #939393;
   font-size: 16px;

@@ -1,3 +1,7 @@
+// =======================
+// Funciones estilizadoras
+// =======================
+
 @mixin buttonStyle() {
   display: flex;
   align-items: center;
@@ -26,6 +30,10 @@
   gap: 30px;
 }
 
+// =======================
+// Estilos principales
+// =======================
+
 .Formulario3 {
   width: 60%;
   display: grid;
@@ -35,7 +43,8 @@
   margin-top: 30px;
   margin-bottom: 40px;
   .Fotos-Paciente {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 60px;
     .UploadButton {
       @include buttonStyle();
@@ -44,18 +53,21 @@
         opacity: 0;
       }
     }
-    // .UploadButton:active span {
-    //   transform: translateY(5px);
-    //   animation-play-state: paused;
-    // }
-    // .UploadButton span {
-    //   animation: hu__hu__ infinite 2s ease-in-out;
-    // }
-    // @keyframes hu__hu__ {
-    //   50% {
-    //     transform: translateY(3px);
-    //   }
-    // }
+
+    // Animaciones al ícono de los botones: Subir imagen
+    .UploadButton:active span {
+      transform: translateY(5px);
+      animation-play-state: paused;
+    }
+    .UploadButton span {
+      animation: hu__hu__ infinite 2s ease-in-out;
+    }
+    @keyframes hu__hu__ {
+      50% {
+        transform: translateY(3px);
+      }
+    }
+
     .SpanLine {
       display: block;
       width: 100%;
@@ -158,6 +170,23 @@
           position: center;
           repeat: no-repeat;
           size: cover;
+        }
+      }
+    }
+  }
+}
+
+// =======================
+// Responsive Design
+// =======================
+
+@media all and (max-width: 630px) {
+  .Formulario3 {
+    .Fotos-Paciente {
+      .Imagenes {
+        img {
+          width: 240px !important;
+          height: 280px !important;
         }
       }
     }

@@ -8,7 +8,8 @@
   margin-bottom: 40px;
 }
 .Formulario3 .Fotos-Paciente {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 60px;
 }
 .Formulario3 .Fotos-Paciente .UploadButton {
@@ -35,6 +36,25 @@
 .Formulario3 .Fotos-Paciente .UploadButton input[type=file] {
   position: absolute;
   opacity: 0;
+}
+.Formulario3 .Fotos-Paciente .UploadButton:active span {
+  transform: translateY(5px);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.Formulario3 .Fotos-Paciente .UploadButton span {
+  -webkit-animation: hu__hu__ infinite 2s ease-in-out;
+          animation: hu__hu__ infinite 2s ease-in-out;
+}
+@-webkit-keyframes hu__hu__ {
+  50% {
+    transform: translateY(3px);
+  }
+}
+@keyframes hu__hu__ {
+  50% {
+    transform: translateY(3px);
+  }
 }
 .Formulario3 .Fotos-Paciente .SpanLine {
   display: block;
@@ -176,4 +196,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media all and (max-width: 630px) {
+  .Formulario3 .Fotos-Paciente .Imagenes img {
+    width: 240px !important;
+    height: 280px !important;
+  }
 }/*# sourceMappingURL=Formulario3.css.map */

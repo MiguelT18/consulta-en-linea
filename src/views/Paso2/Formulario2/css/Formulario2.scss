@@ -4,48 +4,51 @@
   flex-direction: column;
   margin-top: 30px;
 
-  label {
-    // width: 90%;
-    line-height: 170%;
-    font-size: 16px;
-    color: #333;
-    .Check-User-Description {
-      width: 100%;
-      margin: {
-        left: 20px;
-        top: 20px;
-        bottom: 20px;
-      }
-      textarea {
+  .Checkboxes-Container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    label {
+      line-height: 170%;
+      font-size: 16px;
+      color: #333;
+      .Check-User-Description {
         width: 100%;
-        outline: none;
-        font-size: 16px;
+        margin: {
+          left: 20px;
+          top: 20px;
+          bottom: 20px;
+        }
+        textarea {
+          width: 100%;
+          outline: none;
+          font-size: 16px;
+        }
+      }
+      input {
+        margin: {
+          right: 15px;
+        }
+      }
+      input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        background-color: #72b239;
+      }
+      .TextCheck {
+        padding: 8px;
+        resize: none;
+        border-radius: 8px;
+        border: solid 2px rgb(144, 144, 144);
       }
     }
-    input {
-      margin: {
-        right: 15px;
-      }
-    }
-    input[type="checkbox"] {
-      width: 18px;
-      height: 18px;
-      background-color: #72b239;
-    }
   }
-
-  .TextCheck {
-    padding: 8px;
-    resize: none;
-    border-radius: 8px;
-    border: solid 2px rgb(144, 144, 144);
-  }
-  p:nth-child(6) {
+  p:nth-child(2) {
     font-size: 16px;
     color: #333;
     margin: 10px 0 15px;
   }
-  p:nth-child(8) {
+  p:nth-child(4) {
     margin: 15px 0 20px;
     color: #939393;
     font-size: 16px;
