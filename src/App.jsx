@@ -11,6 +11,7 @@ import Paso5 from "./pages/Paso5";
 import Consideraciones from "./pages/Consideraciones";
 import PagoConsulta from "./pages/PagoConsulta";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import PagoNacional from "./pages/PagoNacional";
 
 library.add(fab, faCheckSquare, faCoffee);
 
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
   {
     path: "/pagoConsulta",
     element: <PagoConsulta />,
+  },
+  {
+    path: "/pagoNacional",
+    element: <PagoNacional />,
   },
 ]);
 
