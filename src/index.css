@@ -1,0 +1,110 @@
+/* FONT FAMILIES */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap");
+
+/* TAILWIND */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* !Estilos fuente */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* !FUENTES */
+
+/* TITLE - h1 */
+h1 {
+  text-transform: uppercase;
+  color: #3761b0;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(24px, 8vw, 38px);
+  text-shadow: 3px 2px 3px #8f8f8f;
+}
+/* SECUNDARY TITLE - h2 */
+h2 {
+  font-size: clamp(18px, 5.5vw, 26px);
+  font-family: inherit;
+  font-weight: 700;
+}
+/* THIRD TITLE - h3 */
+h3 {
+  font-size: clamp(18px, 5vw, 23px);
+  font-family: inherit;
+  font-weight: 500;
+}
+/* FOURTH TITLE -h4 */
+h4 {
+  font-size: clamp(18px, 5vw, 21px);
+  font-family: inherit;
+  font-weight: 500;
+}
+
+/* PARAGRAPH - p */
+p {
+  font-size: clamp(18px, 5vw, 20px);
+  font-weight: 300;
+  font-family: inherit;
+}
+
+/* !INPUT */
+input {
+  font-family: inherit;
+}
+
+/* !BOTÓN PRINCIPAL */
+button {
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #3761b0;
+  cursor: pointer;
+  transition: 0.25s;
+}
+button:hover {
+  background-color: #1a49a1;
+}
+button:active,
+button:focus-visible {
+  animation: button-animation;
+  animation-duration: 0.25s;
+  background-color: #1a49a1;
+}
+@keyframes button-animation {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.counter-buttons {
+  display: block;
+  padding: 10px;
+  width: 50px;
+  font-size: 20px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .counter-buttons {
+    padding: 5px;
+    width: 40px;
+  }
+  button {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .counter-buttons {
+    font-size: 18px;
+    padding: 5px;
+    width: 38px;
+  }
+}
