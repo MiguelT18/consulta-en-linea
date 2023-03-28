@@ -13,8 +13,9 @@ const Paso4 = () => {
           title="FOTO DE PERFIL"
           description="Mantente de perfil donde se aprecie el rostro"
           imageExam={PerfilImg}
+          next="/paso5"
+          back="/paso3"
         />
-        <FormButtons next="/paso5" back="/paso3" />
       </div>
     </div>
   );

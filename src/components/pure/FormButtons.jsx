@@ -4,18 +4,29 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
-const FormButtons = ({ back, next }) => {
+const FormButtons = ({ back, next, disabled, nextStep, buttonClick }) => {
+  const handleNext = () => {
+    if (!disabled) {
+      buttonClick();
+    }
+  };
+
   return (
-    <div className="mx-auto py-10 flex items-center justify-between">
+    <div className="w-[100%] mx-auto flex items-center justify-between">
       <NavLink
         className="text-white hover:underline text-[18px] max-md:text-[16px]"
         to={back}
       >
-        Atrás
+        ANTERIOR
       </NavLink>
       <NavLink to={next}>
-        <button className="bg-light-blue hover:bg-hover-light-blue text-white">
-          CONTINUAR
+        <button
+          type="button"
+          className="bg-light-blue hover:bg-hover-light-blue text-white"
+          onClick={handleNext}
+          disabled={disabled} // deshabilita el botón si no hay imagen subida
+        >
+          CONTINUAR <FontAwesomeIcon icon={faCheck} />
         </button>
       </NavLink>
     </div>

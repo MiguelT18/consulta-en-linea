@@ -14,8 +14,9 @@ const Paso5 = () => {
           title="FOTO NASAL"
           description="Inclina hacia arriba el rostro en donde se puedan ver las fosas nasales"
           imageExam={NasalImg}
+          next="/pagoConsulta"
+          back="/paso4"
         />
-        <FormButtons next="/pagoConsulta" back="/paso4" />
       </div>
     </div>
   );

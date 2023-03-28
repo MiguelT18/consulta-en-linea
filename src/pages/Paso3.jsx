@@ -1,7 +1,6 @@
 import React from "react";
 import ContadorPasos from "../components/container/ContadorPasos";
 import UploadImgForm from "../components/pure/forms/UploadImgForm.jsx";
-import FormButtons from "../components/pure/FormButtons";
 import FrontImage from "../assets/images/foto-frontal.png";
 
 const Paso3 = () => {
@@ -14,8 +13,9 @@ const Paso3 = () => {
           title="FOTO FRONTAL"
           description="Mantente de frente donde se aprecie el rostro"
           imageExam={FrontImage}
+          next="/paso4"
+          back="/paso2"
         />
-        <FormButtons next="/paso4" back="/paso2" />
       </div>
     </div>
   );
