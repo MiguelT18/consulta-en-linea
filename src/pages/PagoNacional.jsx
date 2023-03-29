@@ -1,6 +1,6 @@
 import React from "react";
 import ImgBCP from "../assets/images/BCP-image.png";
-import ImgQR from "../assets/images/qr-image.png";
+import ImgQR from "../assets/images/qr-250Bs.jpg";
 // FONTAWESOME
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -18,9 +18,9 @@ const PagoNacional = () => {
       </header>
 
       <main>
-        <div className="bg-gradient-to-r from-blue-400 to-blue-300 w-[380px] flex relative py-5 px-4 rounded-lg mx-auto mt-8 shadow-lg">
+        <div className="bg-gradient-to-r from-blue-400 to-blue-300 w-[95%] max-w-[360px] flex relative py-5 px-4 rounded-lg mx-auto mt-8 shadow-lg ">
           <ul>
-            <li className="text-white font-inherit text-[18px] max-sm:text-[16px]">
+            <li className="text-white font-inherit text-[18px] max-sm-text-[16px]">
               Cristian Simons
             </li>
             <li className="text-white font-inherit text-[18px] max-sm-text-[16px]">
@@ -47,7 +47,11 @@ const PagoNacional = () => {
           <h2 className="text-white text-center">
             TAMBIÉN PUEDES PAGAR A TRAVÉS DEL CÓDIGO QR...
           </h2>
-          <img src={ImgQR} alt="Imagen para realizar el pago a través de QR" />
+          <img
+            className="max-w-[20%] min-w-[260px]"
+            src={ImgQR}
+            alt="Imagen para realizar el pago a través de QR"
+          />
           <button className="text-white bg-green-500 hover:bg-green-600 active:scale-95 flex gap-x-3 items-center">
             <FontAwesomeIcon icon="fa-brands fa-whatsapp" size="xl" />
             <a href="https://wa.link/hmwa5c" target="_blank">
