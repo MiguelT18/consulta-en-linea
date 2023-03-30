@@ -1,7 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import FormButtons from "../../pure/FormButtons";
 
 const FormPaso1 = () => {
+  // ESTADOS DEL COMPONENTE
+
+  // Countries Selector
+  const [paises, setPaises] = useState([]);
+  const [paisSeleccionado, setPaisSeleccionado] = useState("");
+
+  useEffect(() => {
+    fetch("https://restcountries.com/v2/all")
+      .then((response) => response.json())
+      .then((data) => {
+        setPaises(
+          data.map((pais) => ({
+            codigo: pais.alpha3Code,
+            nombre: pais.name,
+            bandera: pais.flag,
+          }))
+        );
+      });
+  }, []);
+
+  function handlePaisSeleccionado(event) {
+    setPaisSeleccionado(event.target.value);
+  }
+
+  //! ERRORES
+  // Datos del formulario
   const [formData, setFormData] = useState({
     nombres: "",
     apellidos: "",
@@ -11,77 +37,71 @@ const FormPaso1 = () => {
     correo: "",
     telefono: "",
     fechaNacimiento: "",
+    pais: "",
   });
 
   const [formErrors, setFormErrors] = useState({});
 
+  //? Manejo de la validación de errores
   const handleValidation = () => {
     let errors = {};
     let formIsValid = true;
 
-    // Validar nombres
-    if (!formData.nombres) {
-      formIsValid = false;
-      errors.nombres = "Por favor ingrese sus nombres";
-    }
+    //? Manejo de Errores
+    const validations = {
+      nombres: "Por favor ingrese sus nombres",
+      apellidos: "Por favor ingrese sus apellidos",
+      genero: "Por favor seleccione su género",
+      documento: "Por favor seleccione su tipo de documento",
+      numDocumento: "Por favor ingrese su número de documento",
+      correo: "Por favor ingrese su correo",
+      telefono: "Por favor ingrese su número de teléfono",
+      fechaNacimiento: "Por favor seleccione su fecha de nacimiento",
+      pais: "Por favor seleccione el país en donde vive",
+    };
 
-    // Validar apellidos
-    if (!formData.apellidos) {
-      formIsValid = false;
-      errors.apellidos = "Por favor ingrese sus apellidos";
-    }
-
-    // Validar género
-    if (!formData.genero) {
-      formIsValid = false;
-      errors.genero = "Por favor seleccione su género";
-    }
-
-    // Validar tipo de documento
-    if (!formData.documento) {
-      formIsValid = false;
-      errors.documento = "Por favor seleccione su tipo de documento";
-    }
-
-    // Validar número de documento
-    if (!formData.numeroDocumento) {
-      formIsValid = false;
-      errors.numeroDocumento = "Por favor ingrese su número de documento";
-    }
-
-    // Validar correo
-    if (!formData.correo) {
-      formIsValid = false;
-      errors.correo = "Por favor ingrese su correo";
-    }
-
-    // Validar teléfono
-    if (!formData.telefono) {
-      formIsValid = false;
-      errors.telefono = "Por favor ingrese su número de teléfono";
-    }
-
-    // Validar fecha de nacimiento
-    if (!formData.fechaNacimiento) {
-      formIsValid = false;
-      errors.fechaNacimiento = "Por favor seleccione su fecha de nacimiento";
-    }
-
-    // Validar País
-    if (!formData.pais) {
-      formIsValid = false;
-      errors.pais = "Por favor seleccione el país en donde vive";
+    for (const field in validations) {
+      switch (field) {
+        case "nombres":
+        case "apellidos":
+        case "correo":
+          if (!formData[field].trim()) {
+            formIsValid = false;
+            errors[field] = validations[field];
+          }
+          break;
+        case "genero":
+        case "documento":
+        case "fechaNacimiento":
+        case "pais":
+          if (!formData[field]) {
+            formIsValid = false;
+            errors[field] = validations[field];
+          }
+          break;
+        case "numDocumento":
+        case "telefono":
+          if (!formData[field].match(/^[0-9]+$/)) {
+            formIsValid = false;
+            errors[field] = "Por favor ingrese un valor numérico";
+          } else if (formData[field].length < 7) {
+            formIsValid = false;
+            errors[field] = "Por favor ingrese un valor válido";
+          }
+          break;
+      }
     }
 
     setFormErrors(errors);
     return formIsValid;
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (handleValidation()) {
-      // Enviar formulario
-    }
+  //? Bandera de validación de errores
+  const handleSubmit = () => {
+    handleValidation();
+    // if (handleValidation()) { // Base de datos
+    //   // Enviar formulario - Base de datos
+    // }
   };
 
   const handleChange = (event) => {
@@ -134,7 +154,6 @@ const FormPaso1 = () => {
             className="text-gray-500 bg-white w-[100%] p-4 rounded-md text-[18px] mb-2 max-sm:text-[16px]"
             name="genero"
             id="genero"
-            defaultValue=""
             value={formData.genero}
             onChange={handleChange}
             required
@@ -155,7 +174,6 @@ const FormPaso1 = () => {
             className="text-gray-500 bg-white w-[100%] p-4 rounded-md text-[18px] mb-2 max-sm:text-[16px]"
             name="documento"
             id="documento"
-            defaultValue=""
             value={formData.documento}
             onChange={handleChange}
             required
@@ -176,14 +194,14 @@ const FormPaso1 = () => {
             className="text-gray-500 bg-white w-[100%] p-4 rounded-md text-[18px] mb-2 max-sm:text-[16px] outline-none"
             type="number"
             placeholder="Número de documento"
-            name="numeroDocumento"
-            value={formData.numeroDocumento}
+            name="numDocumento"
+            value={formData.numDocumento}
             onChange={handleChange}
             required
           />
-          {formErrors.numeroDocumento && (
+          {formErrors.numDocumento && (
             <span className="text-red-500 font-semibold">
-              {formErrors.numeroDocumento}
+              {formErrors.numDocumento}
             </span>
           )}
         </div>
@@ -242,7 +260,7 @@ const FormPaso1 = () => {
         >
           <div className="mb-2">
             <input
-              className="text-gray-500 bg-white w-[100%] p-4 rounded-md text-[18px] max-sm:text-[16px] outline-none"
+              className="text-gray-500 bg-white w-[100%] p-4 rounded-md text-[18px] max-sm:text-[16px] outline-none font-normal"
               type="date"
               id="nacimiento"
               name="nacimiento"
@@ -259,7 +277,29 @@ const FormPaso1 = () => {
           Fecha de nacimiento
         </label>
 
-        <FormButtons buttonClick={handleSubmit} next="/paso2" back="/" />
+        <label
+          className="text-cream-white font-thin text-[18px] max-sm:text-[16px]"
+          htmlFor="pais"
+        >
+          <select
+            className="text-gray-500 bg-white w-[100%] p-4 rounded-md text-[18px] mb-2 max-sm:text-[16px] font-normal"
+            name="pais"
+            id="pais"
+            value={paisSeleccionado}
+            onChange={handlePaisSeleccionado}
+            required
+          >
+            {paises.map((pais) => (
+              <option key={pais.codigo} value={pais.nombre}>
+                <img src={pais.bandera} alt={`${pais.codigo} bandera`} />
+                {pais.nombre}
+              </option>
+            ))}
+          </select>
+          País
+        </label>
+
+        <FormButtons next="/paso2" back="/" buttonClick={handleSubmit} />
       </form>
     </div>
   );
