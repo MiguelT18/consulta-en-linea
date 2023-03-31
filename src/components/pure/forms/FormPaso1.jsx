@@ -9,17 +9,12 @@ const FormPaso1 = () => {
   const [paisSeleccionado, setPaisSeleccionado] = useState("");
 
   useEffect(() => {
-    fetch("https://restcountries.com/v2/all")
-      .then((response) => response.json())
-      .then((data) => {
-        setPaises(
-          data.map((pais) => ({
-            codigo: pais.alpha3Code,
-            nombre: pais.name,
-            bandera: pais.flag,
-          }))
-        );
-      });
+    async function fetchPaises() {
+      const response = await fetch("https://restcountries.com/v2/all");
+      const data = await response.json();
+      setPaises(data);
+    }
+    fetchPaises();
   }, []);
 
   function handlePaisSeleccionado(event) {
@@ -148,7 +143,6 @@ const FormPaso1 = () => {
             )}
           </div>
         </div>
-
         <div>
           <select
             className="text-gray-500 bg-white w-[100%] p-4 rounded-md text-[18px] mb-2 max-sm:text-[16px]"
@@ -168,7 +162,6 @@ const FormPaso1 = () => {
             </span>
           )}
         </div>
-
         <div>
           <select
             className="text-gray-500 bg-white w-[100%] p-4 rounded-md text-[18px] mb-2 max-sm:text-[16px]"
@@ -188,7 +181,6 @@ const FormPaso1 = () => {
             </span>
           )}
         </div>
-
         <div>
           <input
             className="text-gray-500 bg-white w-[100%] p-4 rounded-md text-[18px] mb-2 max-sm:text-[16px] outline-none"
@@ -205,7 +197,6 @@ const FormPaso1 = () => {
             </span>
           )}
         </div>
-
         <label
           className="text-cream-white font-thin text-[18px] max-sm:text-[16px]"
           htmlFor="email"
@@ -229,7 +220,6 @@ const FormPaso1 = () => {
           </div>
           Escribe el correo que más utilices
         </label>
-
         <label
           className="text-cream-white font-thin text-[18px] max-sm:text-[16px]"
           htmlFor="telefono"
@@ -253,7 +243,6 @@ const FormPaso1 = () => {
           </div>
           Escribe tu número de teléfono
         </label>
-
         <label
           className="text-cream-white font-thin text-[18px] max-sm:text-[16px]"
           htmlFor="nacimiento"
@@ -282,23 +271,30 @@ const FormPaso1 = () => {
           htmlFor="pais"
         >
           <select
-            className="text-gray-500 bg-white w-[100%] p-4 rounded-md text-[18px] mb-2 max-sm:text-[16px] font-normal"
-            name="pais"
+            className="text-gray-500 bg-white w-[100%] p-4 rounded-md text-[18px]
+        mb-2 max-sm:text-[16px] font-normal"
             id="pais"
             value={paisSeleccionado}
-            onChange={handlePaisSeleccionado}
-            required
+            onChange={(e) => setPaisSeleccionado(e.target.value)}
           >
+            <option value="">Seleccionar país</option>
             {paises.map((pais) => (
-              <option key={pais.codigo} value={pais.nombre}>
-                <img src={pais.bandera} alt={`${pais.codigo} bandera`} />
-                {pais.nombre}
+              <option
+                key={pais.alpha2Code}
+                value={pais.name}
+                style={{
+                  backgroundImage: `url(${pais.flag})`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "contain",
+                  paddingLeft: "20px",
+                }}
+              >
+                {pais.name}
               </option>
             ))}
           </select>
           País
         </label>
-
         <FormButtons next="/paso2" back="/" buttonClick={handleSubmit} />
       </form>
     </div>
