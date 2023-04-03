@@ -31,7 +31,7 @@ const Consideraciones = () => {
 
       <main>
         <section>
-          <div className="flex flex-wrap gap-8 max-w-[80%] mx-auto mt-3">
+          <div className="flex flex-col gap-8 max-w-[80%] mx-auto mt-3 sm:flex-row">
             <div className="flex-1 min-w-[120px]">
               <img
                 className="w-[110px] mx-auto max-sm:w-[90px] max-md:[100px]"

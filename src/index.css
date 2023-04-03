@@ -21,7 +21,7 @@ h1 {
   color: #3761b0;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
-  font-size: clamp(24px, 8vw, 38px);
+  font-size: clamp(24px, 7vw, 38px);
   text-shadow: 3px 2px 3px #8f8f8f;
 }
 /* SECUNDARY TITLE - h2 */

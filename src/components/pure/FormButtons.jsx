@@ -4,13 +4,7 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
-const FormButtons = ({ back, next, disabled, buttonClick }) => {
-  const handleNext = () => {
-    if (!disabled) {
-      buttonClick();
-    }
-  };
-
+const FormButtons = ({ back, next }) => {
   return (
     <div className="w-[100%] mx-auto flex items-center justify-between">
       <NavLink
@@ -21,10 +15,8 @@ const FormButtons = ({ back, next, disabled, buttonClick }) => {
       </NavLink>
       <NavLink to={next}>
         <button
-          type="button"
-          className="bg-light-blue hover:bg-hover-light-blue text-white "
-          onClick={handleNext}
-          disabled={disabled} // deshabilita el botón si no hay imagen subida
+          type="submit"
+          className="bg-light-blue hover:bg-hover-light-blue text-white"
         >
           CONTINUAR <FontAwesomeIcon icon={faAngleRight} />
         </button>
